@@ -1,0 +1,46 @@
+{
+    "aud": "https://management.azure.com",
+    "iss": "https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/",
+    "iat": 1704444485,
+    "nbf": 1704444485,
+    "exp": 1704450121,
+    "_claim_names": {
+        "groups": "src1"
+    },
+    "_claim_sources": {
+        "src1": {
+            "endpoint": "https://graph.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/users/c05e0746-e125-4cb3-9213-a8b535eacd79/getMemberObjects"
+        }
+    },
+    "acr": "1",
+    "aio": "AVQAq/8VAAAACaHDl3K/ZuZjNQDOz/yrtDccxXVsVyEOUfjSSjbBwutWrHmukQJQawSRfpHLwyOMJ3weYLrOp3kPPhZqDHpIO25J2sRhr57+veYoAHFgejM=",
+    "amr": [
+        "rsa",
+        "mfa"
+    ],
+    "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+    "appidacr": "0",
+    "deviceid": "197d5d4c-91c1-4d2b-9fa7-4d80150d4b9c",
+    "family_name": "Du",
+    "given_name": "Honglin",
+    "idtyp": "user",
+    "in_corp": "true",
+    "ipaddr": "4.216.174.44",
+    "name": "Honglin Du",
+    "oid": "c05e0746-e125-4cb3-9213-a8b535eacd79",
+    "onprem_sid": "S-1-5-21-2146773085-903363285-719344707-2438787",
+    "puid": "10032000324F7449",
+    "rh": "0.ARoAv4j5cvGGr0GRqy180BHbR0ZIf3kAutdPukPawfj2MBMaADo.",
+    "scp": "user_impersonation",
+    "sub": "Insd-qMxkRrv6F0Q1t2PzlOQ-tib_3HpaO7oQsdT_mg",
+    "tid": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "unique_name": "hod@microsoft.com",
+    "upn": "hod@microsoft.com",
+    "uti": "0WDN4-dxV0WFusodGlDqAQ",
+    "ver": "1.0",
+    "wids": [
+        "b79fbf4d-3ef9-4689-8143-76b194e85509"
+    ],
+    "xms_cae": "1",
+    "xms_tcdt": 1289241547
+}

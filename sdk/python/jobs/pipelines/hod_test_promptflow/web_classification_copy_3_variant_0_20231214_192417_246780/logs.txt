@@ -1,0 +1,52 @@
+2023-12-14 11:25:13 +0000    1887 promptflow-runtime INFO     [web_classification_copy_3_variant_0_20231214_192417_246780] Receiving v2 bulk run request 0f3630e0-24da-4e4d-9480-e483f9ad9712: {"flow_id": "web_classification_copy_3_variant_0_20231214_192417_246780", "flow_run_id": "web_classification_copy_3_variant_0_20231214_192417_246780", "flow_source": {"flow_source_type": 1, "flow_source_info": {"snapshot_id": "ec7120db-14da-4122-97f4-c3cfc3817c8e"}, "flow_dag_file": "flow.dag.yaml"}, "connections": "**data_scrubbed**", "log_path": "https://promptfloweast4063704120.blob.core.windows.net/azureml/ExperimentRun/dcid.web_classification_copy_3_variant_0_20231214_192417_246780/logs/azureml/executionlogs.txt?sv=2019-07-07&sr=b&sig=**data_scrubbed**&skoid=55b92eba-d7c7-4afd-ab76-7bb1cd345283&sktid=72f988bf-86f1-41af-91ab-2d7cd011db47&skt=2023-12-14T06%3A00%3A21Z&ske=2023-12-15T14%3A10%3A21Z&sks=b&skv=2019-07-07&st=2023-12-14T11%3A15%3A13Z&se=2023-12-14T19%3A25%3A13Z&sp=rcw", "app_insights_instrumentation_key": "InstrumentationKey=**data_scrubbed**;IngestionEndpoint=https://eastus-6.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/", "data_inputs": {"data": "azureml://datastores/workspaceblobstore/paths/LocalUpload/70c38e61b28e21cb9ddcd67dbe209f05/data.jsonl"}, "azure_storage_setting": {"azure_storage_mode": 1, "storage_account_name": "promptfloweast4063704120", "blob_container_name": "azureml-blobstore-3e123da1-f9a5-4c91-9234-8d9ffbb39ff5", "flow_artifacts_root_path": "promptflow/PromptFlowArtifacts/web_classification_copy_3_variant_0_20231214_192417_246780", "blob_container_sas_token": "?sv=2019-07-07&sr=c&sig=**data_scrubbed**&skoid=55b92eba-d7c7-4afd-ab76-7bb1cd345283&sktid=72f988bf-86f1-41af-91ab-2d7cd011db47&skt=2023-12-14T11%3A25%3A13Z&ske=2023-12-21T11%3A25%3A13Z&sks=b&skv=2019-07-07&se=2023-12-21T11%3A25%3A13Z&sp=racwl", "output_datastore_name": "workspaceblobstore"}}
+2023-12-14 11:25:13 +0000    1887 promptflow-runtime INFO     Runtime version: 20231114.v2. PromptFlow version: 1.0.002.dev3
+2023-12-14 11:25:13 +0000    1887 promptflow-runtime INFO     Updating web_classification_copy_3_variant_0_20231214_192417_246780 to Status.Preparing...
+2023-12-14 11:25:14 +0000    1887 promptflow-runtime INFO     Use spawn method to start child process.
+2023-12-14 11:25:14 +0000    1887 promptflow-runtime INFO     Starting to check process 2117 status for run web_classification_copy_3_variant_0_20231214_192417_246780
+2023-12-14 11:25:14 +0000    1887 promptflow-runtime INFO     Start checking run status for run web_classification_copy_3_variant_0_20231214_192417_246780
+2023-12-14 11:25:19 +0000    2117 promptflow-runtime INFO     [1887--2117] Start processing flowV2......
+2023-12-14 11:25:19 +0000    2117 promptflow-runtime INFO     Runtime version: 20231114.v2. PromptFlow version: 1.0.002.dev3
+2023-12-14 11:25:19 +0000    2117 promptflow-runtime INFO     Setting mlflow tracking uri...
+2023-12-14 11:25:19 +0000    2117 promptflow-runtime INFO     Validating 'AzureML Data Scientist' user authentication...
+2023-12-14 11:25:20 +0000    2117 promptflow-runtime INFO     Successfully validated 'AzureML Data Scientist' user authentication.
+2023-12-14 11:25:20 +0000    2117 promptflow-runtime INFO     Using AzureMLRunStorageV2
+2023-12-14 11:25:20 +0000    2117 promptflow-runtime INFO     Setting mlflow tracking uri to 'azureml://eastus.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus'
+2023-12-14 11:25:20 +0000    2117 promptflow-runtime INFO     Initialized blob service client for AzureMLRunTracker.
+2023-12-14 11:25:21 +0000    2117 promptflow-runtime INFO     Setting mlflow tracking uri to 'azureml://eastus.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus'
+2023-12-14 11:25:21 +0000    2117 promptflow-runtime INFO     Get snapshot sas url for ec7120db-14da-4122-97f4-c3cfc3817c8e...
+2023-12-14 11:25:27 +0000    2117 promptflow-runtime INFO     Downloading snapshot ec7120db-14da-4122-97f4-c3cfc3817c8e from uri https://promptfloweast4063704120.blob.core.windows.net/snapshotzips/promptflow-eastus:3e123da1-f9a5-4c91-9234-8d9ffbb39ff5:snapshotzip/ec7120db-14da-4122-97f4-c3cfc3817c8e.zip...
+2023-12-14 11:25:27 +0000    2117 promptflow-runtime INFO     Downloaded file /service/app/33779/requests/web_classification_copy_3_variant_0_20231214_192417_246780/ec7120db-14da-4122-97f4-c3cfc3817c8e.zip with size 6535 for snapshot ec7120db-14da-4122-97f4-c3cfc3817c8e.
+2023-12-14 11:25:27 +0000    2117 promptflow-runtime INFO     Download snapshot ec7120db-14da-4122-97f4-c3cfc3817c8e completed.
+2023-12-14 11:25:29 +0000    2117 promptflow-runtime INFO     Resolve data from url finished in 1.471121490933001 seconds
+2023-12-14 11:25:29 +0000    2117 promptflow-runtime INFO     Starting the aml run 'web_classification_copy_3_variant_0_20231214_192417_246780'...
+2023-12-14 11:25:29 +0000    2117 execution          WARNING  Starting run without column mapping may lead to unexpected results. Please consult the following documentation for more information: https://aka.ms/pf/column-mapping
+2023-12-14 11:25:29 +0000    2117 execution.bulk     INFO     Using fork, process count: 3
+2023-12-14 11:25:30 +0000    2339 execution          INFO     Process 2339 started.
+2023-12-14 11:25:30 +0000    2350 execution          INFO     Process 2350 started.
+2023-12-14 11:25:30 +0000    2117 execution          INFO     Process name: ForkProcess-6:3, Process id: 2344, Line number: 0 start execution.
+2023-12-14 11:25:30 +0000    2117 execution          INFO     Process name: ForkProcess-6:4, Process id: 2350, Line number: 1 start execution.
+2023-12-14 11:25:32 +0000    2117 execution          INFO     Process name: ForkProcess-6:3, Process id: 2344, Line number: 0 completed.
+2023-12-14 11:25:32 +0000    2117 execution.bulk     INFO     Finished 1 / 3 lines.
+2023-12-14 11:25:32 +0000    2117 execution.bulk     INFO     Average execution time for completed lines: 2.4 seconds. Estimated time for incomplete lines: 4.8 seconds.
+2023-12-14 11:25:32 +0000    2117 execution          INFO     Process name: ForkProcess-6:3, Process id: 2344, Line number: 2 start execution.
+2023-12-14 11:25:32 +0000    2117 execution          INFO     Process name: ForkProcess-6:4, Process id: 2350, Line number: 1 completed.
+2023-12-14 11:25:32 +0000    2117 execution.bulk     INFO     Finished 2 / 3 lines.
+2023-12-14 11:25:32 +0000    2117 execution.bulk     INFO     Average execution time for completed lines: 1.25 seconds. Estimated time for incomplete lines: 1.25 seconds.
+2023-12-14 11:25:35 +0000    2117 execution          INFO     Process name: ForkProcess-6:3, Process id: 2344, Line number: 2 completed.
+2023-12-14 11:25:35 +0000    2117 execution.bulk     INFO     Finished 3 / 3 lines.
+2023-12-14 11:25:35 +0000    2117 execution.bulk     INFO     Average execution time for completed lines: 1.73 seconds. Estimated time for incomplete lines: 0.0 seconds.
+2023-12-14 11:25:30 +0000    2339 execution          INFO     Process 2339 started.
+2023-12-14 11:25:50 +0000    2117 execution.bulk     INFO     Upload status summary metrics for run web_classification_copy_3_variant_0_20231214_192417_246780 finished in 2.835286245215684 seconds
+2023-12-14 11:25:50 +0000    2117 promptflow-runtime INFO     Successfully write run properties {"azureml.promptflow.total_tokens": 3804, "_azureml.evaluate_artifacts": "[{\"path\": \"instance_results.jsonl\", \"type\": \"table\"}]"} with run id 'web_classification_copy_3_variant_0_20231214_192417_246780'
+2023-12-14 11:25:50 +0000    2117 execution.bulk     INFO     Upload RH properties for run web_classification_copy_3_variant_0_20231214_192417_246780 finished in 0.07150017330422997 seconds
+2023-12-14 11:25:50 +0000    2117 promptflow-runtime INFO     Creating unregistered output Asset for Run web_classification_copy_3_variant_0_20231214_192417_246780...
+2023-12-14 11:25:50 +0000    2117 promptflow-runtime INFO     Created debug_info Asset: azureml://locations/eastus/workspaces/3e123da1-f9a5-4c91-9234-8d9ffbb39ff5/data/azureml_web_classification_copy_3_variant_0_20231214_192417_246780_output_data_debug_info/versions/1
+2023-12-14 11:25:50 +0000    2117 promptflow-runtime INFO     Creating unregistered output Asset for Run web_classification_copy_3_variant_0_20231214_192417_246780...
+2023-12-14 11:25:51 +0000    2117 promptflow-runtime INFO     Created flow_outputs output Asset: azureml://locations/eastus/workspaces/3e123da1-f9a5-4c91-9234-8d9ffbb39ff5/data/azureml_web_classification_copy_3_variant_0_20231214_192417_246780_output_data_flow_outputs/versions/1
+2023-12-14 11:25:51 +0000    2117 promptflow-runtime INFO     Creating Artifact for Run web_classification_copy_3_variant_0_20231214_192417_246780...
+2023-12-14 11:25:51 +0000    2117 promptflow-runtime INFO     Created instance_results.jsonl Artifact.
+2023-12-14 11:25:51 +0000    2117 promptflow-runtime INFO     Patching web_classification_copy_3_variant_0_20231214_192417_246780...
+2023-12-14 11:25:51 +0000    2117 promptflow-runtime INFO     Ending the aml run 'web_classification_copy_3_variant_0_20231214_192417_246780' with status 'Completed'...
+2023-12-14 11:25:52 +0000    1887 promptflow-runtime INFO     Process 2117 finished
+2023-12-14 11:25:52 +0000    1887 promptflow-runtime INFO     [1887] Child process finished!
+2023-12-14 11:25:52 +0000    1887 promptflow-runtime INFO     [web_classification_copy_3_variant_0_20231214_192417_246780] End processing bulk run

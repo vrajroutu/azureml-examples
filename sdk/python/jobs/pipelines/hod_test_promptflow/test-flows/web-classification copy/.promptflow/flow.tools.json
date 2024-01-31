@@ -1,0 +1,326 @@
+{
+    "code": {
+        "fetch_text_content_from_url.py": {
+            "type": "python",
+            "inputs": {
+                "url": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "source": "fetch_text_content_from_url.py",
+            "function": "fetch_text_content_from_url"
+        },
+        "summarize_text_content.jinja2": {
+            "type": "llm",
+            "inputs": {
+                "text": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "source": "summarize_text_content.jinja2"
+        },
+        "summarize_text_content__variant_1.jinja2": {
+            "type": "llm",
+            "inputs": {
+                "text": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "source": "summarize_text_content__variant_1.jinja2"
+        },
+        "prepare_examples.py": {
+            "type": "python",
+            "source": "prepare_examples.py",
+            "function": "prepare_examples"
+        },
+        "classify_with_llm.jinja2": {
+            "type": "llm",
+            "inputs": {
+                "url": {
+                    "type": [
+                        "string"
+                    ]
+                },
+                "examples": {
+                    "type": [
+                        "string"
+                    ]
+                },
+                "text_content": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "source": "classify_with_llm.jinja2"
+        },
+        "convert_to_dict.py": {
+            "type": "python",
+            "inputs": {
+                "input_str": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "source": "convert_to_dict.py",
+            "function": "convert_to_dict"
+        }
+    },
+    "package": {
+        "my_tool_package.tools.my_tool_1.my_tool": {
+            "function": "my_tool",
+            "inputs": {
+                "connection": {
+                    "type": [
+                        "CustomConnection"
+                    ],
+                    "custom_type": [
+                        "MyFirstConnection",
+                        "MySecondConnection"
+                    ]
+                },
+                "input_text": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "module": "my_tool_package.tools.my_tool_1",
+            "name": "My First Tool",
+            "description": "This is my first tool",
+            "type": "python",
+            "package": "test-custom-tools",
+            "package_version": "0.0.2"
+        },
+        "my_tool_package.tools.my_tool_2.MyTool.my_tool": {
+            "class_name": "MyTool",
+            "function": "my_tool",
+            "inputs": {
+                "connection": {
+                    "type": [
+                        "CustomConnection"
+                    ],
+                    "custom_type": [
+                        "MySecondConnection"
+                    ]
+                },
+                "input_text": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "module": "my_tool_package.tools.my_tool_2",
+            "name": "My Second Tool",
+            "description": "This is my second tool",
+            "type": "python",
+            "package": "test-custom-tools",
+            "package_version": "0.0.2"
+        },
+        "my_tool_package.tools.my_tool_with_custom_strong_type_connection.my_tool": {
+            "function": "my_tool",
+            "inputs": {
+                "connection": {
+                    "custom_type": [
+                        "MyCustomConnection"
+                    ],
+                    "type": [
+                        "CustomConnection"
+                    ]
+                },
+                "input_param": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "module": "my_tool_package.tools.my_tool_with_custom_strong_type_connection",
+            "name": "Tool With Custom Strong Type Connection",
+            "description": "This is my tool with custom strong type connection.",
+            "type": "python",
+            "package": "test-custom-tools",
+            "package_version": "0.0.2"
+        },
+        "promptflow.tools.embedding.embedding": {
+            "name": "Embedding",
+            "description": "Use Open AI's embedding model to create an embedding vector representing the input text.",
+            "type": "python",
+            "module": "promptflow.tools.embedding",
+            "function": "embedding",
+            "inputs": {
+                "connection": {
+                    "type": [
+                        "AzureOpenAIConnection",
+                        "OpenAIConnection"
+                    ]
+                },
+                "deployment_name": {
+                    "type": [
+                        "string"
+                    ],
+                    "enabled_by": "connection",
+                    "enabled_by_type": [
+                        "AzureOpenAIConnection"
+                    ],
+                    "capabilities": {
+                        "completion": false,
+                        "chat_completion": false,
+                        "embeddings": true
+                    },
+                    "model_list": [
+                        "text-embedding-ada-002",
+                        "text-search-ada-doc-001",
+                        "text-search-ada-query-001"
+                    ]
+                },
+                "model": {
+                    "type": [
+                        "string"
+                    ],
+                    "enabled_by": "connection",
+                    "enabled_by_type": [
+                        "OpenAIConnection"
+                    ],
+                    "enum": [
+                        "text-embedding-ada-002",
+                        "text-search-ada-doc-001",
+                        "text-search-ada-query-001"
+                    ]
+                },
+                "input": {
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "package": "promptflow-tools",
+            "package_version": "0.1.0b9"
+        },
+        "promptflow.tools.open_source_llm.OpenSourceLLM.call": {
+            "name": "Open Source LLM",
+            "description": "Use an Open Source model from the Azure Model catalog, deployed to an AzureML Online Endpoint for LLM Chat or Completion API calls.",
+            "type": "custom_llm",
+            "module": "promptflow.tools.open_source_llm",
+            "class_name": "OpenSourceLLM",
+            "function": "call",
+            "inputs": {
+                "endpoint_name": {
+                    "default": "-- please enter an endpoint name --",
+                    "type": [
+                        "string"
+                    ]
+                },
+                "connection": {
+                    "default": null,
+                    "type": [
+                        "CustomConnection"
+                    ]
+                },
+                "deployment_name": {
+                    "default": null,
+                    "type": [
+                        "string"
+                    ]
+                },
+                "api": {
+                    "enum": [
+                        "chat",
+                        "completion"
+                    ],
+                    "type": [
+                        "string"
+                    ]
+                },
+                "temperature": {
+                    "default": 1.0,
+                    "type": [
+                        "double"
+                    ]
+                },
+                "max_new_tokens": {
+                    "default": 500,
+                    "type": [
+                        "int"
+                    ]
+                },
+                "top_p": {
+                    "default": 1.0,
+                    "advanced": true,
+                    "type": [
+                        "double"
+                    ]
+                },
+                "model_kwargs": {
+                    "default": "{}",
+                    "advanced": true,
+                    "type": [
+                        "object"
+                    ]
+                }
+            },
+            "package": "promptflow-tools",
+            "package_version": "0.1.0b9"
+        },
+        "promptflow.tools.serpapi.SerpAPI.search": {
+            "name": "Serp API",
+            "description": "Use Serp API to obtain search results from a specific search engine.",
+            "inputs": {
+                "connection": {
+                    "type": [
+                        "SerpConnection"
+                    ]
+                },
+                "engine": {
+                    "default": "google",
+                    "enum": [
+                        "google",
+                        "bing"
+                    ],
+                    "type": [
+                        "string"
+                    ]
+                },
+                "location": {
+                    "default": "",
+                    "type": [
+                        "string"
+                    ]
+                },
+                "num": {
+                    "default": "10",
+                    "type": [
+                        "int"
+                    ]
+                },
+                "query": {
+                    "type": [
+                        "string"
+                    ]
+                },
+                "safe": {
+                    "default": "off",
+                    "enum": [
+                        "active",
+                        "off"
+                    ],
+                    "type": [
+                        "string"
+                    ]
+                }
+            },
+            "type": "python",
+            "module": "promptflow.tools.serpapi",
+            "class_name": "SerpAPI",
+            "function": "search",
+            "package": "promptflow-tools",
+            "package_version": "0.1.0b9"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+a: !!omap
+- apple: 3
+- banana: 5
+- orange: 2
+b:
+- 1
+- 2
+- 3
+- 4
+c: hello

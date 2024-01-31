@@ -1,0 +1,119 @@
+a:
+- 1
+- 2
+- 3
+- 4
+- true
+environment:
+    python_requirements_txt: requirements.txt
+inputs:
+    url:
+        default: https://www.microsoft.com/en-us/d/xbox-wireless-controller-stellar-shift-special-edition/94fbjc7h0h6h
+        type: string
+node_variants:
+    summarize_text_content:
+        default_variant_id: variant_1
+        variants:
+            variant_0:
+                node:
+                    api: completion
+                    connection: open-ai-gogogog
+                    inputs:
+                        best_of: '1'
+                        deployment_name: text-davinci-003
+                        echo: 'False'
+                        frequency_penalty: '0'
+                        logit_bias: ''
+                        logprobs: ''
+                        max_tokens: '128'
+                        presence_penalty: '0'
+                        stop: ''
+                        suffix: ''
+                        temperature: '0.2'
+                        text: ${fetch_text_content_from_url.output}
+                        top_p: '1.0'
+                    module: promptflow.tools.aoai
+                    provider: AzureOpenAI
+                    source:
+                        path: summarize_text_content.jinja2
+                        type: code
+                    type: llm
+            variant_1:
+                node:
+                    api: completion
+                    connection: open-ai-gogogog
+                    inputs:
+                        best_of: '1'
+                        deployment_name: text-davinci-003
+                        echo: 'False'
+                        frequency_penalty: '0'
+                        logit_bias: ''
+                        logprobs: ''
+                        max_tokens: '256'
+                        presence_penalty: '0'
+                        stop: ''
+                        suffix: ''
+                        temperature: '0.2'
+                        text: ${fetch_text_content_from_url.output}
+                        top_p: '1.0'
+                    module: promptflow.tools.aoai
+                    provider: AzureOpenAI
+                    source:
+                        path: summarize_text_content__variant_1.jinja2
+                        type: code
+                    type: llm
+nodes:
+-   inputs:
+        url: ${inputs.url}
+    name: fetch_text_content_from_url
+    source:
+        path: fetch_text_content_from_url.py
+        type: code
+    type: python
+-   name: summarize_text_content
+    use_variants: true
+-   inputs: {}
+    name: prepare_examples
+    source:
+        path: prepare_examples.py
+        type: code
+    type: python
+-   api: completion
+    connection: open-ai-gogogog
+    inputs:
+        best_of: '1'
+        deployment_name: text-davinci-003
+        echo: 'False'
+        examples: ${prepare_examples.output}
+        frequency_penalty: '0'
+        logit_bias: ''
+        logprobs: ''
+        max_tokens: '128'
+        presence_penalty: '0'
+        stop: ''
+        suffix: ''
+        temperature: '0.2'
+        text_content: ${summarize_text_content.output}
+        top_p: '1.0'
+        url: ${inputs.url}
+    module: promptflow.tools.aoai
+    name: classify_with_llm
+    provider: AzureOpenAI
+    source:
+        path: classify_with_llm.jinja2
+        type: code
+    type: llm
+-   inputs:
+        input_str: ${classify_with_llm.output}
+    name: convert_to_dict
+    source:
+        path: convert_to_dict.py
+        type: code
+    type: python
+outputs:
+    category:
+        reference: ${convert_to_dict.output.category}
+        type: string
+    evidence:
+        reference: ${convert_to_dict.output.evidence}
+        type: string

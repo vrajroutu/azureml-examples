@@ -1,0 +1,74 @@
+{
+    "etag": null,
+    "id": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus",
+    "identity": {
+        "principalId": "55b92eba-d7c7-4afd-ab76-7bb1cd345283",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "type": "SystemAssigned"
+    },
+    "kind": "Default",
+    "location": "eastus",
+    "name": "promptflow-eastus",
+    "properties": {
+        "applicationInsights": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.insights/components/promptfloweast6116803744",
+        "azureOpenAI": {
+            "deployedModels": [],
+            "endpoint": "https://promptflow-eastus-aoai.openai.azure.com/",
+            "failureReason": null,
+            "provisioningState": "Succeeded",
+            "proxyResourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus/oaiaccounts/id_877310627f954a0a8993e6facedab0df",
+            "resourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.CognitiveServices/accounts/promptflow-eastus-aoai"
+        },
+        "containerRegistry": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.ContainerRegistry/registries/promptfloweus",
+        "creationTime": "2023-04-08T02:52:45.2632073Z",
+        "description": "",
+        "discoveryUrl": "https://eastus.api.azureml.ms/discovery",
+        "enableDataIsolation": false,
+        "endpointResources": {},
+        "friendlyName": "promptflow-eastus",
+        "hbiWorkspace": false,
+        "imageBuildCompute": null,
+        "ipAllowlist": [],
+        "keyVault": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.Keyvault/vaults/promptfloweast1111289317",
+        "linkedModelInventoryArmId": null,
+        "managedNetwork": {
+            "changeableIsolationModes": [
+                "AllowInternetOutbound",
+                "AllowOnlyApprovedOutbound"
+            ],
+            "isolationMode": "Disabled"
+        },
+        "mlFlowTrackingUri": "azureml://eastus.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus",
+        "notebookInfo": {
+            "fqdn": "ml-promptflow-eastu-eastus-3e123da1-f9a5-4c91-9234-8d9ffbb39ff5.eastus.notebooks.azure.net",
+            "isPrivateLinkEnabled": false,
+            "notebookPreparationError": null,
+            "resourceId": "d27bca8b0dcc4dcda2e03fceabbc1a1d"
+        },
+        "privateLinkCount": 0,
+        "provisioningState": "Succeeded",
+        "publicNetworkAccess": "Enabled",
+        "sasGetterUri": "",
+        "sdkTelemetryAppInsightsKey": "71fa86c2-fe23-49db-bb2e-8537edfb6ead",
+        "softDeleteEnabled": false,
+        "storageAccount": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.Storage/storageAccounts/promptfloweast4063704120",
+        "storageHnsEnabled": false,
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "v1LegacyMode": false,
+        "workspaceId": "3e123da1-f9a5-4c91-9234-8d9ffbb39ff5"
+    },
+    "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+    },
+    "systemData": {
+        "createdAt": "2023-04-08T02:52:45.2632073Z",
+        "createdBy": "clwan@microsoft.com",
+        "createdByType": "User",
+        "lastModifiedAt": "2023-04-08T02:52:45.2632073Z",
+        "lastModifiedBy": "clwan@microsoft.com",
+        "lastModifiedByType": "User"
+    },
+    "tags": {},
+    "type": "Microsoft.MachineLearningServices/workspaces"
+}

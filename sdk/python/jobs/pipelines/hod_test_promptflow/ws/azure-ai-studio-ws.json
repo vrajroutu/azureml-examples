@@ -1,0 +1,142 @@
+{
+    "etag": null,
+    "id": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.MachineLearningServices/workspaces/hod",
+    "identity": {
+        "principalId": "8979742e-3d03-4f49-9411-2d521857f013",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "type": "SystemAssigned"
+    },
+    "kind": "Project",
+    "location": "eastus2",
+    "name": "hod",
+    "properties": {
+        "aiServicesResource": {
+            "is1KeyV2Resource": true,
+            "isByo": false,
+            "provisioningState": "Succeeded",
+            "resourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.CognitiveServices/accounts/hod-ai-aiservices"
+        },
+        "applicationInsights": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.Insights/components/appi-hodai918219498713",
+        "azureAIContentSafety": {
+            "endpoint": null,
+            "failureReason": null,
+            "provisioningState": "NotStarted",
+            "resourceId": null
+        },
+        "azureCognitiveSearch": {
+            "endpoint": null,
+            "failureReason": null,
+            "provisioningState": "NotStarted",
+            "resourceId": null
+        },
+        "azureOpenAI": {
+            "deployedModels": [],
+            "endpoint": null,
+            "failureReason": null,
+            "provisioningState": "NotStarted",
+            "proxyResourceId": null,
+            "resourceId": null
+        },
+        "containerRegistry": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.ContainerRegistry/registries/crhodai406973164710",
+        "creationTime": "2023-11-09T07:59:56.8584208Z",
+        "description": "",
+        "discoveryUrl": "https://eastus2.api.azureml.ms/discovery",
+        "enableDataIsolation": true,
+        "endpointResources": {
+            "Azure.ContentSafety": {
+                "creationOpId": "5a55cfd6-c407-42d6-8ae0-6bbee37c3ea8",
+                "endpointType": "Azure.ContentSafety",
+                "is1KeyV2Resource": true,
+                "isByo": false,
+                "provisioningState": "Succeeded",
+                "resourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.CognitiveServices/accounts/hod-ai-aiservices",
+                "systemData": {
+                    "createdAt": "2023-11-09T07:59:16.1693246Z",
+                    "createdBy": "hod@microsoft.com",
+                    "createdByType": "User",
+                    "lastModifiedAt": "2023-11-09T07:59:16.1693246Z",
+                    "lastModifiedBy": "hod@microsoft.com",
+                    "lastModifiedByType": "User"
+                }
+            },
+            "Azure.OpenAI": {
+                "creationOpId": "c3bd6a07-6c93-408c-ae0f-d46e39d7c5a9",
+                "endpointType": "Azure.OpenAI",
+                "is1KeyV2Resource": true,
+                "isByo": false,
+                "provisioningState": "Succeeded",
+                "resourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.CognitiveServices/accounts/hod-ai-aiservices",
+                "systemData": {
+                    "createdAt": "2023-11-09T07:59:16.5130813Z",
+                    "createdBy": "hod@microsoft.com",
+                    "createdByType": "User",
+                    "lastModifiedAt": "2023-11-09T07:59:16.5130813Z",
+                    "lastModifiedBy": "hod@microsoft.com",
+                    "lastModifiedByType": "User"
+                }
+            },
+            "Azure.Speech": {
+                "creationOpId": "3d1b1cf2-dd99-44a0-b325-36e14858d1b8",
+                "endpointType": "Azure.Speech",
+                "is1KeyV2Resource": true,
+                "isByo": false,
+                "provisioningState": "Succeeded",
+                "resourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.CognitiveServices/accounts/hod-ai-aiservices",
+                "systemData": {
+                    "createdAt": "2023-11-09T07:59:16.216202Z",
+                    "createdBy": "hod@microsoft.com",
+                    "createdByType": "User",
+                    "lastModifiedAt": "2023-11-09T07:59:16.216202Z",
+                    "lastModifiedBy": "hod@microsoft.com",
+                    "lastModifiedByType": "User"
+                }
+            }
+        },
+        "friendlyName": "hod",
+        "hbiWorkspace": false,
+        "hubResourceId": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.MachineLearningServices/workspaces/hod-ai",
+        "imageBuildCompute": null,
+        "ipAllowlist": [],
+        "keyVault": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.KeyVault/vaults/kv-hodai381272158821",
+        "linkedModelInventoryArmId": null,
+        "managedNetwork": {
+            "changeableIsolationModes": [
+                "AllowInternetOutbound",
+                "AllowOnlyApprovedOutbound"
+            ],
+            "isolationMode": "Disabled"
+        },
+        "mlFlowTrackingUri": "azureml://eastus2.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.MachineLearningServices/workspaces/hod",
+        "notebookInfo": {
+            "fqdn": "ml-hod-eastus2-bf03e8f8-9569-4ac6-81b5-f7be5d58f370.eastus2.notebooks.azure.net",
+            "isPrivateLinkEnabled": false,
+            "notebookPreparationError": null,
+            "resourceId": "749cfd658e7c4f989b7d6596e80852ea"
+        },
+        "privateLinkCount": 0,
+        "provisioningState": "Succeeded",
+        "publicNetworkAccess": "Enabled",
+        "sasGetterUri": "",
+        "sdkTelemetryAppInsightsKey": "066b0d89-53d2-4b58-8bc8-ac382527e4fb",
+        "softDeleteEnabled": false,
+        "storageAccount": "/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/hod-ai/providers/Microsoft.Storage/storageAccounts/sthodai688308019158",
+        "storageHnsEnabled": false,
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "v1LegacyMode": false,
+        "workspaceId": "bf03e8f8-9569-4ac6-81b5-f7be5d58f370"
+    },
+    "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+    },
+    "systemData": {
+        "createdAt": "2023-11-09T07:59:56.8584208Z",
+        "createdBy": "92d2090c-a8c2-45f1-b984-62b73d41bdf1",
+        "createdByType": "Application",
+        "lastModifiedAt": "2023-11-09T07:59:56.8584208Z",
+        "lastModifiedBy": "92d2090c-a8c2-45f1-b984-62b73d41bdf1",
+        "lastModifiedByType": "Application"
+    },
+    "tags": {},
+    "type": "Microsoft.MachineLearningServices/workspaces"
+}

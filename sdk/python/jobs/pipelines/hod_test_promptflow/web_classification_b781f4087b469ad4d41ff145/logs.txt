@@ -1,0 +1,97 @@
+2024-01-16 22:11:57 +0000     105 promptflow-runtime INFO     [web_classification_b781f4087b469ad4d41ff145] Receiving v2 bulk run request 70531be5-efbd-4dc0-ab3e-846f124fed28: {"flow_id": "web_classification_b781f4087b469ad4d41ff145", "flow_run_id": "web_classification_b781f4087b469ad4d41ff145", "flow_source": {"flow_source_type": 1, "flow_source_info": {"snapshot_id": "de4540d0-220a-4a52-8ca8-59edbe51b4b2"}, "flow_dag_file": "flow.dag.yaml"}, "connections": "**data_scrubbed**", "log_path": "https://promptfloweast8791670106.blob.core.windows.net/azureml/ExperimentRun/dcid.web_classification_b781f4087b469ad4d41ff145/logs/azureml/executionlogs.txt?sv=2019-07-07&sr=b&sig=**data_scrubbed**&skoid=e34a890c-4b63-4790-b61f-717843797664&sktid=72f988bf-86f1-41af-91ab-2d7cd011db47&skt=2024-01-16T19%3A27%3A57Z&ske=2024-01-18T03%3A37%3A57Z&sks=b&skv=2019-07-07&st=2024-01-16T22%3A01%3A57Z&se=2024-01-17T06%3A11%3A57Z&sp=rcw", "app_insights_instrumentation_key": "InstrumentationKey=**data_scrubbed**;IngestionEndpoint=https://eastus2-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/", "data_inputs": {"data": "azureml://datastores/workspaceblobstore/paths/LocalUpload/55b7781874415819a735413345273ea6/bert-paper-qna.jsonl"}, "inputs_mapping": {"chat_history": "${data.chat_history}", "pdf_url": "${data.pdf_url}", "question": "${data.question}", "config": "{\"EMBEDDING_MODEL_DEPLOYMENT_NAME\": \"text-embedding-ada-002\", \"CHAT_MODEL_DEPLOYMENT_NAME\": \"gpt-4\", \"PROMPT_TOKEN_LIMIT\": 3000, \"MAX_COMPLETION_TOKENS\": 1024, \"VERBOSE\": true, \"CHUNK_SIZE\": 1024, \"CHUNK_OVERLAP\": 64}"}, "azure_storage_setting": {"azure_storage_mode": 1, "storage_account_name": "promptfloweast8791670106", "blob_container_name": "azureml-blobstore-1120f13e-d319-44f3-9a12-271bf34ad372", "flow_artifacts_root_path": "promptflow/PromptFlowArtifacts/web_classification_b781f4087b469ad4d41ff145", "blob_container_sas_token": "?sv=2019-07-07&sr=c&sig=**data_scrubbed**&skoid=e34a890c-4b63-4790-b61f-717843797664&sktid=72f988bf-86f1-41af-91ab-2d7cd011db47&skt=2024-01-16T22%3A11%3A57Z&ske=2024-01-23T22%3A11%3A57Z&sks=b&skv=2019-07-07&se=2024-01-23T22%3A11%3A57Z&sp=racwl", "output_datastore_name": "workspaceblobstore"}}
+2024-01-16 22:11:58 +0000     105 promptflow-runtime INFO     Runtime version: 20231204.v4. PromptFlow version: 1.2.0rc1
+2024-01-16 22:11:58 +0000     105 promptflow-runtime INFO     Updating web_classification_b781f4087b469ad4d41ff145 to Status.Preparing...
+2024-01-16 22:11:58 +0000     105 promptflow-runtime INFO     Downloading snapshot to /mnt/host/service/app/46457/requests/web_classification_b781f4087b469ad4d41ff145
+2024-01-16 22:11:58 +0000     105 promptflow-runtime INFO     Get snapshot sas url for de4540d0-220a-4a52-8ca8-59edbe51b4b2...
+2024-01-16 22:12:04 +0000     105 promptflow-runtime INFO     Downloading snapshot de4540d0-220a-4a52-8ca8-59edbe51b4b2 from uri https://promptfloweast8791670106.blob.core.windows.net/snapshotzips/promptflow-eastus2euap:1120f13e-d319-44f3-9a12-271bf34ad372:snapshotzip/de4540d0-220a-4a52-8ca8-59edbe51b4b2.zip...
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Downloaded file /mnt/host/service/app/46457/requests/web_classification_b781f4087b469ad4d41ff145/de4540d0-220a-4a52-8ca8-59edbe51b4b2.zip with size 16146149 for snapshot de4540d0-220a-4a52-8ca8-59edbe51b4b2.
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Download snapshot de4540d0-220a-4a52-8ca8-59edbe51b4b2 completed.
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Successfully download snapshot to /mnt/host/service/app/46457/requests/web_classification_b781f4087b469ad4d41ff145
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     About to execute a python flow.
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Use spawn method to start child process.
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Starting to check process 14913 status for run web_classification_b781f4087b469ad4d41ff145
+2024-01-16 22:12:05 +0000     105 promptflow-runtime INFO     Start checking run status for run web_classification_b781f4087b469ad4d41ff145
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     [105--14913] Start processing flowV2......
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Runtime version: 20231204.v4. PromptFlow version: 1.2.0rc1
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Setting mlflow tracking uri...
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Validating 'AzureML Data Scientist' user authentication...
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Successfully validated 'AzureML Data Scientist' user authentication.
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Using AzureMLRunStorageV2
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Setting mlflow tracking uri to 'azureml://eastus2euap.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus2euap'
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Initialized blob service client for AzureMLRunTracker.
+2024-01-16 22:12:09 +0000   14913 promptflow-runtime INFO     Setting mlflow tracking uri to 'azureml://eastus2euap.api.azureml.ms/mlflow/v1.0/subscriptions/96aede12-2f73-41cb-b983-6d11a904839b/resourceGroups/promptflow/providers/Microsoft.MachineLearningServices/workspaces/promptflow-eastus2euap'
+2024-01-16 22:12:10 +0000   14913 promptflow-runtime INFO     Resolve data from url finished in 0.46757384802913293 seconds
+2024-01-16 22:12:10 +0000   14913 promptflow-runtime INFO     Starting the aml run 'web_classification_b781f4087b469ad4d41ff145'...
+2024-01-16 22:12:10 +0000   14913 execution.bulk     INFO     Using fork, process count: 11
+2024-01-16 22:12:10 +0000   14965 execution.bulk     INFO     Process 14965 started.
+2024-01-16 22:12:10 +0000   14973 execution.bulk     INFO     Process 14973 started.
+2024-01-16 22:12:10 +0000   14980 execution.bulk     INFO     Process 14980 started.
+2024-01-16 22:12:10 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:2, Process id: 14965, Line number: 0 start execution.
+2024-01-16 22:12:10 +0000   14986 execution.bulk     INFO     Process 14986 started.
+2024-01-16 22:12:10 +0000   14991 execution.bulk     INFO     Process 14991 started.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:4, Process id: 14973, Line number: 1 start execution.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:3, Process id: 14980, Line number: 2 start execution.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:6, Process id: 14986, Line number: 3 start execution.
+2024-01-16 22:12:11 +0000   14995 execution.bulk     INFO     Process 14995 started.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:9, Process id: 14991, Line number: 4 start execution.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:5, Process id: 14995, Line number: 5 start execution.
+2024-01-16 22:12:11 +0000   15006 execution.bulk     INFO     Process 15006 started.
+2024-01-16 22:12:11 +0000   15009 execution.bulk     INFO     Process 15009 started.
+2024-01-16 22:12:11 +0000   15017 execution.bulk     INFO     Process 15017 started.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:7, Process id: 15006, Line number: 6 start execution.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:11, Process id: 15009, Line number: 7 start execution.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:10, Process id: 15017, Line number: 8 start execution.
+2024-01-16 22:12:11 +0000   15035 execution.bulk     INFO     Process 15035 started.
+2024-01-16 22:12:11 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:12, Process id: 15035, Line number: 9 start execution.
+2024-01-16 22:12:16 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:5, Process id: 14995, Line number: 5 completed.
+2024-01-16 22:12:16 +0000   14913 execution.bulk     INFO     Finished 1 / 11 lines.
+2024-01-16 22:12:16 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 5.41 seconds. Estimated time for incomplete lines: 54.1 seconds.
+2024-01-16 22:12:16 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:5, Process id: 14995, Line number: 10 start execution.
+2024-01-16 22:12:17 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:7, Process id: 15006, Line number: 6 completed.
+2024-01-16 22:12:17 +0000   14913 execution.bulk     INFO     Finished 2 / 11 lines.
+2024-01-16 22:12:17 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 3.32 seconds. Estimated time for incomplete lines: 29.88 seconds.
+2024-01-16 22:12:18 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:2, Process id: 14965, Line number: 0 completed.
+2024-01-16 22:12:18 +0000   14913 execution.bulk     INFO     Finished 3 / 11 lines.
+2024-01-16 22:12:18 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.39 seconds. Estimated time for incomplete lines: 19.12 seconds.
+2024-01-16 22:12:19 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:4, Process id: 14973, Line number: 1 completed.
+2024-01-16 22:12:19 +0000   14913 execution.bulk     INFO     Finished 4 / 11 lines.
+2024-01-16 22:12:19 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.24 seconds. Estimated time for incomplete lines: 15.68 seconds.
+2024-01-16 22:12:24 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:3, Process id: 14980, Line number: 2 completed.
+2024-01-16 22:12:24 +0000   14913 execution.bulk     INFO     Finished 5 / 11 lines.
+2024-01-16 22:12:24 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.76 seconds. Estimated time for incomplete lines: 16.56 seconds.
+2024-01-16 22:12:26 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:9, Process id: 14991, Line number: 4 completed.
+2024-01-16 22:12:26 +0000   14913 execution.bulk     INFO     Finished 6 / 11 lines.
+2024-01-16 22:12:26 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.53 seconds. Estimated time for incomplete lines: 12.65 seconds.
+2024-01-16 22:12:28 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:6, Process id: 14986, Line number: 3 completed.
+2024-01-16 22:12:28 +0000   14913 execution.bulk     INFO     Finished 7 / 11 lines.
+2024-01-16 22:12:28 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.46 seconds. Estimated time for incomplete lines: 9.84 seconds.
+2024-01-16 22:12:29 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:11, Process id: 15009, Line number: 7 completed.
+2024-01-16 22:12:29 +0000   14913 execution.bulk     INFO     Finished 8 / 11 lines.
+2024-01-16 22:12:29 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.31 seconds. Estimated time for incomplete lines: 6.93 seconds.
+2024-01-16 22:12:33 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:12, Process id: 15035, Line number: 9 completed.
+2024-01-16 22:12:33 +0000   14913 execution.bulk     INFO     Finished 9 / 11 lines.
+2024-01-16 22:12:33 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.48 seconds. Estimated time for incomplete lines: 4.96 seconds.
+2024-01-16 22:12:35 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:10, Process id: 15017, Line number: 8 completed.
+2024-01-16 22:12:35 +0000   14913 execution.bulk     INFO     Finished 10 / 11 lines.
+2024-01-16 22:12:35 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 2.46 seconds. Estimated time for incomplete lines: 2.46 seconds.
+2024-01-16 22:13:10 +0000   14913 execution.bulk     INFO     [Process Pool] [Active processes: 11 / 11]
+2024-01-16 22:13:10 +0000   14913 execution.bulk     INFO     [Lines] [Finished: 10] [Processing: 1] [Pending: 0]
+2024-01-16 22:13:10 +0000   14913 execution.bulk     INFO     Processing Lines: line 10 (Process name(ForkProcess-134:5)-Process id(14995)-Line number(10)).
+2024-01-16 22:13:17 +0000   14913 execution.bulk     INFO     Process name: ForkProcess-134:5, Process id: 14995, Line number: 10 completed.
+2024-01-16 22:13:17 +0000   14913 execution.bulk     INFO     Finished 11 / 11 lines.
+2024-01-16 22:13:17 +0000   14913 execution.bulk     INFO     Average execution time for completed lines: 6.08 seconds. Estimated time for incomplete lines: 0.0 seconds.
+2024-01-16 22:13:21 +0000   14913 execution.bulk     INFO     Upload status summary metrics for run web_classification_b781f4087b469ad4d41ff145 finished in 2.421303265960887 seconds
+2024-01-16 22:13:21 +0000   14913 promptflow-runtime INFO     Successfully write run properties {"azureml.promptflow.total_tokens": 3834, "_azureml.evaluate_artifacts": "[{\"path\": \"instance_results.jsonl\", \"type\": \"table\"}]"} with run id 'web_classification_b781f4087b469ad4d41ff145'
+2024-01-16 22:13:21 +0000   14913 execution.bulk     INFO     Upload RH properties for run web_classification_b781f4087b469ad4d41ff145 finished in 0.07965350098675117 seconds
+2024-01-16 22:13:21 +0000   14913 promptflow-runtime INFO     Creating unregistered output Asset for Run web_classification_b781f4087b469ad4d41ff145...
+2024-01-16 22:13:21 +0000   14913 promptflow-runtime INFO     Created debug_info Asset: azureml://locations/eastus2euap/workspaces/1120f13e-d319-44f3-9a12-271bf34ad372/data/azureml_web_classification_b781f4087b469ad4d41ff145_output_data_debug_info/versions/1
+2024-01-16 22:13:21 +0000   14913 promptflow-runtime INFO     Creating unregistered output Asset for Run web_classification_b781f4087b469ad4d41ff145...
+2024-01-16 22:13:22 +0000   14913 promptflow-runtime INFO     Created flow_outputs output Asset: azureml://locations/eastus2euap/workspaces/1120f13e-d319-44f3-9a12-271bf34ad372/data/azureml_web_classification_b781f4087b469ad4d41ff145_output_data_flow_outputs/versions/1
+2024-01-16 22:13:22 +0000   14913 promptflow-runtime INFO     Creating Artifact for Run web_classification_b781f4087b469ad4d41ff145...
+2024-01-16 22:13:22 +0000   14913 promptflow-runtime INFO     Created instance_results.jsonl Artifact.
+2024-01-16 22:13:22 +0000   14913 promptflow-runtime INFO     Patching web_classification_b781f4087b469ad4d41ff145...
+2024-01-16 22:13:22 +0000   14913 promptflow-runtime INFO     Ending the aml run 'web_classification_b781f4087b469ad4d41ff145' with status 'Completed'...
+2024-01-16 22:13:24 +0000     105 promptflow-runtime INFO     Process 14913 finished
+2024-01-16 22:13:24 +0000     105 promptflow-runtime INFO     [105] Child process finished!
+2024-01-16 22:13:24 +0000     105 promptflow-runtime INFO     [web_classification_b781f4087b469ad4d41ff145] End processing bulk run
+2024-01-16 22:13:24 +0000     105 promptflow-runtime INFO     Cleanup working dir /mnt/host/service/app/46457/requests/web_classification_b781f4087b469ad4d41ff145 for bulk run

@@ -1,0 +1,30 @@
+{
+    "aud": "https://management.azure.com",
+    "iss": "https://sts.windows.net/f8cdef31-a31e-4b4a-93e4-5f571e91255a/",
+    "iat": 1704441789,
+    "nbf": 1704441789,
+    "exp": 1704447411,
+    "acr": "1",
+    "aio": "AYQAe/8VAAAALIqau6pCBi9CeASK7GMEvlVFnBQAKohhKRf93RrWZiqPd3klqXhEzN3LTYuV/sdoGqJX3IbekjhGawiagCIL4uKer74bUtxxjFCjaR1ac+GYfZuyvPmBs11a2QNY+jq0OEJbvWvbAbn16Rhx8lFMf75WWsEULC2gM1zXXbMz8v8=",
+    "altsecid": "1:live.com:00034001F84E6C7A",
+    "amr": [
+        "pwd"
+    ],
+    "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+    "appidacr": "0",
+    "email": "0mza987@gmail.com",
+    "family_name": "\u675c",
+    "given_name": "\u6d2a\u6797",
+    "idp": "live.com",
+    "idtyp": "user",
+    "ipaddr": "4.216.174.45",
+    "rh": "0.ASsAMe_N-B6jSkuT5F9XHpElWkZIf3kAutdPukPawfj2MBMBAAQ.",
+    "scp": "user_impersonation",
+    "sub": "D2z1yqZDS9Z99Y6wmS8CEGeApCEp2Wiw6rWOuIe6GY8",
+    "tid": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+    "unique_name": "live.com#0mza987@gmail.com",
+    "uti": "tY2YYi9dPke63RbvYo_WAg",
+    "ver": "1.0",
+    "xms_cae": "1",
+    "xms_tcdt": 1338336685
+}
